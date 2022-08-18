@@ -1,0 +1,23 @@
+# YouTube
+
+```elixir
+Mix.install([{:kino, "~> 0.6"}, {:youtube, path: "."}])
+```
+
+## Install
+
+Install in the setup section of your Livebook, along with Kino.
+
+<!-- livebook:{"force_markdown":true} -->
+
+```elixir
+Mix.install([{:kino, "~> 0.6"}, {:youtube, github: "brooklinjazz/youtube"}])
+```
+
+## Usage
+
+Call `YouTube.new/1` with the full video URL.
+
+```elixir
+YouTube.new("https://www.youtube.com/watch?v=5tLsBwAjOo0")
+```
